@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function age(){
+var day=document.getElementById("txt1").value
+
+var month=document.getElementById("txt2").value
+
+var year=document.getElementById("txt3").value
+
+var n=new Date()
+var d=n.getDate()
+var m=n.getMonth()+1
+var y=n.getFullYear()
+
+
+document.getElementById("result").innerHTML="My Age is "+(y-year)+" years "+(m-month)+" months "+(d-day)+"days"
+
+    }
+</script>
+<body >
+    <div>   
+         <label for="">enter day :
+       <input type="text" id="txt1">
+    </label><br><br>
+
+    <label for="">enter month :
+         <input type="text" id="txt2">
+    </label><br><br>
+
+    <label for="">enter year :
+        <input type="text" id="txt3">
+    </label><br><br>
+
+    <input type="button" value="submit" onclick="age()">
+    
+</div>
+<h2 id="result" ></h2>
+ <style>
+    h2{
+        color: darkorange;
+        padding: 10px;
+        margin: auto;
+        
+    }
+    div{
+        background-color: aliceblue;
+        border: 2px solid;
+        margin: auto;
+        margin-top: auto;
+        
+          padding: 18px; 
+          text-align: center;
+          width: 300px;
+          height: 180px;
+    }
+ </style>
+</body>
+</html>
